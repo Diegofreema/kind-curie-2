@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom palette for premium dark/light contrast */
+  --color-brand-50: hsl(220, 40%, 98%);
+  --color-brand-100: hsl(220, 40%, 95%);
+  --color-brand-200: hsl(220, 40%, 88%);
+  --color-brand-300: hsl(220, 40%, 80%);
+  --color-brand-400: hsl(220, 40%, 70%);
+  --color-brand-500: hsl(224, 76%, 48%);
+  --color-brand-600: hsl(224, 76%, 40%);
+  --color-brand-700: hsl(224, 76%, 32%);
+  --color-brand-800: hsl(224, 76%, 24%);
+  --color-brand-900: hsl(224, 76%, 16%);
+  --color-brand-950: hsl(224, 76%, 10%);
+}
+
+@utility glass-panel {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@utility glass-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0f19;
+    color: #f8fafc;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0b0f19;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
