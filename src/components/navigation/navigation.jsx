@@ -1,4 +1,3 @@
-import { ExternalLink } from 'lucide-react';
 import { Brand } from './brand';
 import { GitHub } from './github';
 import { Links } from './links';
