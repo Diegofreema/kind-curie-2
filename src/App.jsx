@@ -1,6 +1,6 @@
 import { BackgroundEffect } from './components/background-effect';
 import { Footer } from './components/footer';
-import { Main } from './components/main';
+import { Main } from './components/main/main';
 import { Navigation } from './components/navigation/navigation';
 
 function App() {
